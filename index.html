@@ -51,8 +51,44 @@
 </head>
 <body class="container-lg">
     <header>
+      <!-- navigation bar -->
 
-        <div class="px-5 sm:w-full  md:px-8 lg:px-32 lg:max-w-[1170px] container flex justify-center">
+      <nav class="px-5 py-7 lg:py-12 lg:px-32">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li ><a class="text-[#FF4240]">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-2xl gap-0">Hockey<span class="text-[#FF4240]">’</span>s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li ><a class="text-[#FF4240] text-base">Home</a></li>
+              <li><a class="text-base text-[#424247]">About</a></li>
+              <li><a class="text-base text-[#424247]">Pages</a></li>
+              <li><a class="text-base text-[#424247]">Blog</a></li>
+              <li><a class="text-base text-[#424247]">Contact</a></li>
+              <li class="lg:ml-48"><a ><i class="fa-solid fa-magnifying-glass text-base text-[#424247]"></i></a></li>
+            </ul>
+          </div>
+          <div class="navbar-end w-44">
+            <a class="btn bg-[#FF4240] border-none text-white hover:bg-red-700">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner section or carusel-->
+
+        <div class="px-5 lg:px-32 flex justify-center flex-col relative">
             <div class="carousel">
                 <div id="slide1" class="carousel-item relative w-full">
                   <img alt="Hockeys" src="./Images/1.png" class="w-full" />
@@ -83,19 +119,27 @@
                   </div>
                 </div>
               </div>
+            <div class="lg:absolute bottom-0 -right-96">
+              <div class="card w-fit mt-4 lg:w-3/6 bg-black shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title text-white">Meet all the heroes from the field</h2>
+                  <p class="text-[#FFFFFF99]">Researchers, producers and on-air personalities compiled the list, and players 10-1 were revealed Sunday in the ninth of a nine-part series.</p>
+                </div>
+              </div>
+            </div>
         </div>
     </header>
 
 
     <main>
        <!-- skill section -->
-       <section class="px-5 flex justify-center sm:w-full  md:px-8 lg:px-32 lg:max-w-[1170px]">
+       <section class="px-5 flex justify-center sm:w-full  md:px-8 lg:px-32">
         <div class="flex flex-col justify-center items-center gap-y-8 container mt-8 lg:mt-32 sm:px-5 lg:px-33">
 
 
-            <div class=" lg:w-3/4 text-center space-y-6">
+            <div class=" border-t-2 border-b-2 border-dashed border-gray-300 p-6 lg:p-8  text-center space-y-6">
                 <h1 class="text-4xl text-[#131318] text-font-extrabold">Professional Hockeys Club</h1>
-                <p class="text-base text-center text-[#131318a9]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                <p class="text-base text-center text-[#131318a9] lg:w-3/4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
 
 
@@ -105,28 +149,28 @@
                     </div>
                     <div>
                         <h1 class="text-[color: #131318;] text-xl font-semibold">Prayer Facility</h1>
-                        <p class="text-base text-[#13131899]">Prayer facilities are typically designed to be serene and conducive to prayer and meditation.</p>
+                        <p class="text-base text-[#13131899] w-3/4 m-auto">Prayer facilities are typically designed to be serene and conducive to prayer and meditation.</p>
                     </div>
                 </div>
                 <div class="text-center space-y-6">
                     <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar"><span class="text-2xl font-bold text-black">95%</span></div>
                     <div>
                         <h1 class="text-[color: #131318;] text-xl font-semibold">Experienced Coach</h1>
-                        <p class="text-base text-[#13131899]">Experienced coaches encounter various situations and challenges.</p>
+                        <p class="text-base text-[#13131899] w-3/4 m-auto">Experienced coaches encounter various situations and challenges.</p>
                     </div>
                 </div>
                 <div class="text-center space-y-6">
                     <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar"><span class="text-2xl font-bold text-black">90%</span></div>
                     <div>
                         <h1 class="text-[color: #131318;] text-xl font-semibold">Senior Player</h1>
-                        <p class="text-base text-[#13131899]">Senior Players encounter various situations and challenges.</p>
+                        <p class="text-base text-[#13131899] w-3/4 m-auto">Senior Players encounter various situations and challenges.</p>
                     </div>
                 </div>
                 <div class="text-center space-y-6">
                     <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar"><span class="text-2xl text-black font-bold">80%</span></div>
                     <div>
                         <h1 class="text-[color: #131318;] text-xl font-semibold">Prayer Facility</h1>
-                        <p class="text-base text-[#13131899]">Prayer facilities are typically designed to be serene </p>
+                        <p class="text-base text-[#13131899] w-3/4 m-auto">Prayer facilities are typically designed to be serene </p>
                     </div>
                 </div>
 
@@ -137,9 +181,9 @@
        <!-- Program Sections -->
 
 
-       <section class="px-5 flex justify-center sm:w-full  md:px-8 lg:px-32 lg:max-w-[1170px] ">
+       <section class="px-5 flex justify-center sm:w-full  md:px-8 lg:px-32  ">
          <div class="flex flex-col justify-center items-center gap-y-8 mt-8  lg:mt-32 lg:px-33">   
-            <div class="flex flex-col justify-center items-center gap-8">
+            <div class="flex flex-col justify-center items-center gap-8 p-6 lg:p-8 border-t-2 border-b-2 border-dashed border-gray-300">
                 <h1 class="text-4xl text-[#131318] text-font-extrabold">Program Sections</h1>
                 <p class=" text-base text-center text-[#131318a9]"> Designed for young children who are just starting to learn the basics of hockey. This might include introductory drills, basic skills development, and a focus on fun and participation.</p>
             </div>
@@ -164,9 +208,9 @@
        </section>
 
        <!-- our product section -->
-       <section class="px-5 flex justify-center sm:w-full  md:px-8 lg:px-32 lg:max-w-[1170px]">
+       <section class="px-5 flex justify-center sm:w-full  md:px-8 lg:px-32 ">
         <div>
-          <div class="flex flex-col justify-center items-center gap-y-8 mt-8  lg:mt-32 lg:px-33">
+          <div class="flex flex-col justify-center items-center border-t-2 border-b-2 border-dashed border-gray-300 p-6 lg:p-8 gap-y-8 mt-8  lg:mt-32 lg:px-33">
             <h1 class="text-4xl text-[#131318] text-font-extrabold">Our New Products</h1>
             <p class="text-base text-center text-[#131318a9]"> The more information you can share, the better we can assist you in creating engaging and informative content for your new products.</p>
           </div>
@@ -174,7 +218,7 @@
           <div class="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-6">
 
              <div class="card p-6 flex flex-col lg:flex-row gap-4 bg-base-100 shadow-xl rounded-2xl border border-solid border-gray-400">
-                <figure><img src="./Images/5.png" alt="shirt"/></figure>
+                <figure><img class="w-full" src="./Images/5.png" alt="shirt"/></figure>
                 <div class="card-body p-0 w-full">
                    <div class="flex items-center sm:gap-0 text-base"><i class="fa-solid fa-star text-[#F99808]"></i><p>5.1</p><i class="fa-regular fa-eye"></i><p>20</p><i class="fa-solid fa-heart text-red-500"></i><p>200</p></div>
                    <h2 class="card-title text-xl text-black font-extrabold">Hoodies for Man</h2>
@@ -189,7 +233,7 @@
                 </div>
               </div>
              <div class="card p-6 flex flex-col lg:flex-row gap-4 bg-base-100 shadow-xl rounded-2xl border border-solid border-gray-400">
-                <figure><img src="./Images/6.png" alt="shirt"/></figure>
+                <figure><img class="w-full" src="./Images/6.png" alt="shirt"/></figure>
                 <div class="card-body p-0 w-full">
                    <div class="flex items-center text-base"><i class="fa-solid fa-star text-[#F99808]"></i><p>5.1</p><i class="fa-regular fa-eye"></i><p>20</p><i class="fa-solid fa-heart text-red-500"></i><p>200</p></div>
                    <h2 class="card-title text-xl text-black font-extrabold">Ring for Man</h2>
@@ -204,7 +248,7 @@
                 </div>
               </div>
              <div class="card p-6 flex flex-col lg:flex-row gap-4 bg-base-100 shadow-xl rounded-2xl border border-solid border-gray-400">
-                <figure><img src="./Images/7.png" alt="Cap"/></figure>
+                <figure><img class="w-full" src="./Images/7.png" alt="Cap"/></figure>
                 <div class="card-body p-0 w-full">
                    <div class="flex items-center text-base"><i class="fa-solid fa-star text-[#F99808]"></i><p>5.1</p><i class="fa-regular fa-eye"></i><p>20</p><i class="fa-solid fa-heart text-red-500"></i><p>200</p></div>
                    <h2 class="card-title text-xl text-black font-extrabold">Cap for Man</h2>
@@ -219,7 +263,7 @@
                 </div>
               </div>
              <div class="card p-6 flex flex-col lg:flex-row gap-4 bg-base-100 shadow-xl rounded-2xl border border-solid border-gray-400">
-                <figure><img src="./Images/8.png" alt="shirt"/></figure>
+                <figure><img class="w-full" src="./Images/8.png" alt="shirt"/></figure>
                 <div class="card-body p-0 w-full">
                    <div class="flex items-center text-base"><i class="fa-solid fa-star text-[#F99808]"></i><p>5.1</p><i class="fa-regular fa-eye"></i><p>20</p><i class="fa-solid fa-heart text-red-500"></i><p>200</p></div>
                    <h2 class="card-title text-xl text-black font-extrabold">T-Shirt for Man</h2>
@@ -234,7 +278,7 @@
                 </div>
               </div>
              <div class="card p-6 flex flex-col lg:flex-row gap-4 bg-base-100 shadow-xl rounded-2xl border border-solid border-gray-400">
-                <figure><img src="./Images/9.png" alt="shirt"/></figure>
+                <figure><img class="w-full" src="./Images/9.png" alt="shirt"/></figure>
                 <div class="card-body p-0 w-full">
                    <div class="flex items-center text-base"><i class="fa-solid fa-star text-[#F99808]"></i><p>5.1</p><i class="fa-regular fa-eye"></i><p>20</p><i class="fa-solid fa-heart text-red-500"></i><p>200</p></div>
                    <h2 class="card-title text-xl text-black font-extrabold">Helmet for Cricketer</h2>
@@ -249,7 +293,7 @@
                 </div>
               </div>
              <div class="card p-6 flex flex-col lg:flex-row gap-4 bg-base-100 shadow-xl rounded-2xl border border-solid border-gray-400">
-                <figure><img src="./Images/10.png" alt="shirt"/></figure>
+                <figure><img class="w-full" src="./Images/10.png" alt="shirt"/></figure>
                 <div class="card-body p-0 w-full">
                    <div class="flex items-center text-base"><i class="fa-solid fa-star text-[#F99808]"></i><p>5.1</p><i class="fa-regular fa-eye"></i><p>20</p><i class="fa-solid fa-heart text-red-500"></i><p>200</p></div>
                    <h2 class="card-title text-xl text-black font-extrabold">Football</h2>
@@ -267,10 +311,103 @@
           </div>
         </div>
        </section>
-       <!-- Get In Touch section -->
-       <section class="px-5 flex justify-center sm:w-full  md:px-8 lg:px-32 lg:max-w-[1440px]">
+       <!-- Clients Question section -->
+
+       <section class="px-5 flex justify-center sm:w-full  md:px-8 lg:px-32 lg:gap-10">
+
         <div>
-          <div class="flex flex-col justify-center items-center gap-y-8 mt-8  lg:mt-32 lg:px-33">
+          <div class=" border-t-2 border-b-2 border-dashed border-gray-300 p-8 flex flex-col justify-center items-center gap-y-8 mt-8  lg:mt-32 lg:px-33">
+            <h1 class="text-4xl text-[#131318] text-font-extrabold">Clients Question</h1>
+            <p class="text-base text-center text-[#131318a9]">You can ask any thing about Hockey’s site and if any problem here is some solution/p>
+          </div>
+          <div class="flex justify-center flex-col lg:flex-row items-center rounded-sm gap-5 p-8 border border-gray-200 lg:mt-12">
+            <div class="lg:w-2/4">
+              <img class="w-full" src="./Images/11.png" alt="ask">
+            </div>
+
+            <div class="lg:w-2/4">
+
+              <div class="collapse rounded-none collapse-plus border-t-2 border-b-slate-400">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                  Our Equipment
+                </div>
+                <div class="collapse-content"> 
+                  <p>Professional hockey equipment is specialized gear designed to ensure the safety, performance, and comfort of players participating in ice hockey</p>
+                </div>
+              </div>
+
+              <div class="collapse rounded-none collapse-plus border-t-2 border-b-slate-400">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Hockey Training
+                </div>
+                <div class="collapse-content"> 
+                  <p>Professional hockey training often involves a combination of on-ice and off-ice exercises. </p>
+                </div>
+              </div>
+
+              <div class="collapse rounded-none collapse-plus border-t-2 border-b-slate-400">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Private Lessons
+                </div>
+                <div class="collapse-content"> 
+                  <p>Private hockey lessons may cover a range of aspects, including skating techniques, puck handling, shooting accuracy and power, defensive strategies, and overall game awareness. Coaches often tailor the lessons to address specific weaknesses or refine particular skills, offering a more customized learning experience compared to group training sessions.</p>
+                </div>
+              </div>
+
+              <div class="collapse rounded-none collapse-plus border-t-2 border-b-slate-400">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Ski Touring
+                </div>
+                <div class="collapse-content"> 
+                  <p>Ice hockey is a team sport played on an ice rink, typically in a highly competitive league setting, while ski touring involves skiing over long distances in mountainous terrain, often with a focus on exploring and backcountry skiing.</p>
+                </div>
+              </div>
+
+
+              <div class="collapse rounded-none collapse-plus border-t-2 border-b-slate-400">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Booking
+                </div>
+                <div class="collapse-content"> 
+                  <p>
+                    Booking professional hockey tickets typically involves a few straightforward steps:
+                    Decide which professional hockey game you want to attend and choose the team you want to watch. Check the schedule of the league or team to find upcoming game.
+                    </p>
+                </div>
+              </div>
+
+              <div class="collapse rounded-none collapse-plus border-t-2 border-b-slate-400">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Pricings
+                </div>
+                <div class="collapse-content"> 
+                  <p>
+                    <ul>
+                      <li>U18 tickets from only £8</li>
+                      <li>Adult tickets from just £25</li> 
+                      <li>Get 4 games per day instead of 2</li>
+                    </ul> 
+                    </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+
+       </section>
+
+       <!-- Get In Touch section -->
+       <section class="px-5  flex justify-center sm:w-full  md:px-8 lg:px-32">
+        <div>
+          <div class="flex flex-col justify-center items-center border-t-2 border-b-2 border-dashed border-gray-300 p-6 lg:p-8 gap-y-8 mt-8  lg:mt-32 lg:px-33">
             <h1 class="text-4xl text-[#131318] text-font-extrabold">Get In Touch</h1>
             <p class="text-base text-center text-[#131318a9]">We are here and ready to assist you! How can I help you today?</p>
           </div>
